@@ -1,0 +1,102 @@
+.newsletter__section {
+  padding: 5rem 6rem;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.newsletter__section__icons {
+  font-size: 2rem;
+  color: var(--color-blue);
+  margin-bottom: 1rem;
+}
+.newsletter__section__icons svg {
+  margin-left: 1rem;
+}
+.newsletter__section__question {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+.newsletter__section__question h2 {
+  font-family: var(--font-base);
+  font-size: 3rem;
+  color: var(--color-golden);
+}
+
+.main_div::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  top: -7px;
+  left: -7px;
+  z-index: -5;
+  border-top: 3px solid var(--color);
+  border-left: 3px solid var(--color);
+  transition: 0.5s;
+}
+
+.main_div::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  bottom: -7px;
+  right: -7px;
+  z-index: -5;
+  border-right: 3px solid var(--color);
+  border-bottom: 3px solid var(--color);
+  transition: 0.5s;
+}
+
+.main_div:hover::before {
+  width: 100%;
+  height: 100%;
+}
+
+.main_div:hover::after {
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 320px) {
+  .newsletter__section {
+    padding: 5rem 1rem;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .newsletter__section__question h2{
+    text-align: center;  
+  }
+}
+@media screen and (min-width: 425px) and (max-width: 768px){
+  .newsletter__section {
+    padding: 5rem 1rem;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .newsletter__section__question h2{
+    text-align: center;  
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 425px){
+  .newsletter__section {
+    padding: 5rem 1rem;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .newsletter__section__question h2{
+    text-align: center;  
+  }
+}

@@ -1,0 +1,99 @@
+.app__services {
+    background-color: var(--color-grey);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .app__services h2 {
+    color: var(--color-golden);
+    font-family: var(--font-base);
+  }
+  
+  .app__services-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    margin: 3rem 15rem;
+  }
+  .app__services-first__line {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .app__services-content_first {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: rgb(15, 22, 15);
+    padding-left: 2em;
+    padding-bottom: 2rem;
+    padding-right: 2rem;
+    border-bottom: 3px solid var(--color-white);
+    cursor: pointer;
+  }
+  .app__services-content_first h2 {
+    margin-bottom: 2rem;
+  }
+  .app__services-first__line h2 {
+    font-size: 34px;
+  }
+  
+  .app__services-important {
+    display: flex;
+    align-items: center;
+    margin: 1rem 15rem;
+  }
+  .app__services-important div {
+    width: 50px;
+    height: 2px;
+    margin-right: 0.5rem;
+    background-color: var(--color-blue);
+  }
+  .app__services-first__line p {
+    margin: 0 15rem;
+    font-size: 0.8rem;
+    letter-spacing: 0.1rem;
+    color: var(--color-blue);
+  }
+ 
+  
+  @media screen and (max-width: 1150px) {
+    .app__services-container {
+      grid-template-columns: repeat(3, 1fr);
+      margin: 2rem 2rem;
+    }
+    .app__services .line{
+      margin: 1rem 26rem;
+    }
+   
+  }
+  
+  @media screen and (max-width: 768px) {
+    .app__services-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .app__services-important{
+      margin: 0 2rem;
+    }
+    .app__services-first__line p{
+      margin: 1rem 2rem;
+    }
+    .app__services .line{
+      margin: 1rem 20rem;
+    }
+  }
+  @media screen and (max-width: 425px) {
+      .app__services-container {
+          grid-template-columns: repeat(1, 1fr);
+          margin: 0 0;
+        }
+  
+     
+  }
+

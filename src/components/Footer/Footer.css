@@ -1,0 +1,100 @@
+.footer__section{
+    display: flex;
+    justify-content:space-between;
+    background-color: var(--color-black);
+}
+.footer__section__part1 h3{
+    font-family: var(--font-base);
+    margin-bottom: 1rem;
+    color: var(--color-golden);
+    
+}
+.footer__section__part2 h3{
+    font-family: var(--font-base);
+    margin-bottom: 1rem;
+    color: var(--color-golden);
+}
+.footer__section__part3 h3{
+    font-family: var(--font-base);
+    margin-bottom: 1rem;
+    color: var(--color-golden);
+}
+.footer__section__part4 h3{
+    font-family: var(--font-base);
+    margin-bottom: 1rem;
+    color: var(--color-golden);
+}
+
+.footer__section__part1 div{
+    height: 2px;
+    width:100px;
+    background-color: var(--color-blue);
+    margin-top:1.5rem;
+}
+.footer__section__part2 svg{
+    color: var(--color-blue);
+    
+}
+.footer__section__part1 p:hover{
+    color: var(--color-blue);
+}
+.footer__section__part2 div:hover{
+    color: var(--color-blue);
+    cursor: pointer;
+}
+.footer__section__part3 p:hover{
+    color: var(--color-blue);
+    cursor: pointer;
+}
+.footer__section__part4 p:hover{
+    color: var(--color-blue);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1024px){
+    .section__padding{
+        padding: 4rem 3rem;
+    }
+}
+
+
+@media screen and (min-width: 425px) and (max-width: 768px){
+    .footer__section{
+        display:flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .footer__section__part2{
+        margin-top:1.5rem;
+    }
+    .footer__section__part3{
+        margin-top:1.5rem;
+    }
+    .footer__section__part4{
+        margin-top:1.5rem;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 425px){
+    .footer__section{
+        display:flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .footer__section__part2{
+        margin-top:1.5rem;
+    }
+    .footer__section__part3{
+        margin-top:1.5rem;
+    }
+    .footer__section__part4{
+        margin-top:1.5rem;
+    }
+}
+
+@media screen and (max-width: 1280px){
+    .section__padding{
+        padding: 4rem 4rem;
+    }
+    
+  }

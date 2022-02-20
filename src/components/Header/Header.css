@@ -1,0 +1,180 @@
+.header__parent{
+    background-color: var(--color-black); 
+    width: 100%;
+    background-image: url("../../assets/headphone.jpg");
+    background-repeat: no-repeat;
+    background-position: left top
+}
+.app__header h1 {
+  font-family: var(--font-base);
+  color: var(--color-golden);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  line-height: 117px;
+  font-size: 90px;
+  margin-bottom: 2rem;
+}
+.app__wrapper_img img {
+  margin-top:5rem;
+  width: 80%;
+}
+.app__wrapper_info h6{
+    color: var(--color-blue);
+    margin: 1em 0;
+
+}
+.main_div {
+    --color: var(--color-golden);
+    position: relative;
+    z-index: 1;
+   }
+   
+   .main_div::before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    top: -7px;
+    left: -7px;
+    z-index: -5;
+    border-top: 3px solid var(--color);
+    border-left: 3px solid var(--color);
+    transition: 0.5s;
+   }
+   
+   .main_div::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    bottom: -7px;
+    right: -7px;
+    z-index: -5;
+    border-right: 3px solid var(--color);
+    border-bottom: 3px solid var(--color);
+    transition: 0.5s;
+   }
+   
+   .main_div:hover::before {
+    width: 100%;
+    height: 100%;
+   }
+   
+   .main_div:hover::after {
+    width: 100%;
+    height: 100%;
+   }
+
+.app__header-content{
+    display: flex;
+    margin: 0 12rem;
+    gap: 2rem;
+}
+
+.app__header-content_first{
+    display:flex;
+    flex-direction:column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: rgb(15, 22, 15);
+    padding-left: 2em;
+    margin-top: 8rem;
+    margin-bottom:2rem;
+   
+}
+.app__header-content_first:hover {
+    border: 1px solid var(--color-blue);
+}
+.app__header-content_icon{
+    margin: 2rem 0;
+    font-size:2em;
+    color: var(--color-blue);
+}
+
+.app__header-content_first p{
+    color: var(--color-grey);
+    margin: 1rem 0;
+    padding-top: 1rem;
+    padding-right: 2rem;
+    padding-bottom: 1rem;
+}
+.app__header-content_first h2{
+    font-family: var(--font-base);
+    margin-bottom: 0.5em;
+    letter-spacing:0.1rem;
+    color: var(--color-golden);
+}
+.app__header-content_first div{
+    height:2px;
+    width:100px;
+    background-color:var(--color-blue);
+}
+
+
+@media screen and (min-width: 2000px){
+    .app__header-h1{
+        font-size:180px;
+        line-height:210px;
+    }
+}
+
+@media screen and (max-width : 1150px) {
+    .app__header-h1{
+        font-size:90px;
+    }
+    .app__header-content{
+        margin-top: 3rem;
+    }
+
+}
+@media screen and (max-width : 768px){
+    .app__header-h1{
+        font-size:70px;
+        line-height:87px;
+    }
+   
+
+}
+@media screen and (max-width : 425px) and (min-width :320px){
+    .app__header-h1{
+        font-size:50px;
+        line-height:70px;
+    }
+    
+    
+}
+@media screen and (max-width: 320px){
+    .app__header-content_first{
+       display: none;
+     }
+    
+}
+@media screen and (max-width: 1024px){
+    .app__header-content{
+        display: flex;
+        margin: 0 8rem;
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 820px) and (min-width: 768px){
+    .app__header-content{
+        display: flex;
+        margin: 0 2rem;
+        gap: 1rem;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 425px){
+    .app__header-content_first{
+        display: none;
+    }
+}
+@media screen and (min-width: 425px) and (max-width: 768px){
+    .app__header-content_first{
+        display: none;
+    }
+}
