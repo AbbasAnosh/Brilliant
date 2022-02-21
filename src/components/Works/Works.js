@@ -2,9 +2,10 @@ import React from "react";
 import "./Works.css";
 import images from "../constants/images";
 
+
 const Works = () => {
   return (
-    <div className="works__parent section__padding-works" id="works">
+    <div className="works__parent" id="works">
       <div className="works__first__section">
         <div className="works__first__section-partOne">
           <div className="works__first__section-partOne_para">
@@ -19,12 +20,10 @@ const Works = () => {
       </div>
 
       <div className="works__images">
-        <img src={images.image1} alt="image1" />
-        <img src={images.image2} alt="image2" />
-        <img src={images.image3} alt="image3" />
-        <img src={images.image4} alt="image4" />
-        <img src={images.image5} alt="image5" />
-        <img src={images.image6} alt="image6" />
+        <img src={images.worksImg1} alt="image1" />
+        <img src={images.worksImg2} alt="image2" />
+        <img src={images.worksImg3} alt="image3" />
+        <img src={images.worksImg4} alt="image4" />
       </div>
     </div>
   );

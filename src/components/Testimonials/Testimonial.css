@@ -165,17 +165,27 @@ article.nextSlide {
   .title__important h2 {
     font-size: 1.2em;
   }
-  .section-center {
-    width: 100%;
+  .section-center { 
     width: 70vw;
-    height: 450px;
+    height: 480px;
+    
   }
+  
 
   .icon {
-    display: none;
+    font-size:2rem;
   }
   .companies__logo {
     display: none;
+  }
+  .title{
+    font-size:0.8rem;
+  }
+  .name{
+    font-size:0.9rem;
+  }
+  .text{
+    font-size:0.8rem;
   }
 }
 

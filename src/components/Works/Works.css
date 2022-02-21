@@ -1,6 +1,7 @@
 .works__parent {
   background-color: #121612;
   width: 100%;
+  padding: 4rem 0;
 }
 .works__first__section {
   display: flex;
@@ -47,7 +48,7 @@
   margin-bottom: 4rem;
 }
 .works__images img {
-  width: 248px;
+  width: 370px;
 }
 
 .main_div::before {
@@ -91,13 +92,10 @@
 
 @media screen and (max-width : 1440px) {
   .works__images img {
-    width: 235px;
+    width: 350px;
     object-fit: cover;
   }
   
-}
-@media screen and (max-width : 1024px){
- 
 }
 
 
@@ -111,11 +109,12 @@
   }
   .works__first__section button {
     margin-top:2rem;
+    margin-bottom:3rem;
   }
   .works__images img{
-    width: 330px;
+    width: 300px;
     height: auto;
-    margin-left: 3rem;
+    margin-left: 2rem;
   }
   
   /* .section__padding-works{
@@ -140,7 +139,7 @@
     margin-top:2rem;
   }
   .works__images img{
-    width: 100%;
+    width: 300px;
     height: auto;
   }
   .section__padding-works{
@@ -151,13 +150,13 @@
   }
   
 }
-@media screen and (max-width: 1280px){
+@media screen and (max-width: 1280px) and (min-width: 1024px){
   .section__padding{
     padding:4rem 0;
 
   }
   .works__images img{
-    width: 209px;
+    width: 365px;
     height: auto;
   }
   

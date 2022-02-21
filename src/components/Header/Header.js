@@ -1,6 +1,5 @@
 import React from "react";
 import "./Header.css";
-import images from "../../components/constants/images";
 import { FiSend } from "react-icons/fi";
 import { BiBrain } from "react-icons/bi";
 import { HiOutlineLightBulb } from "react-icons/hi";
